@@ -1,7 +1,7 @@
 buildscript {
   repositories {
     mavenCentral()
-    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url 'https://jitpack.io' }
   }
 
   dependencies {
@@ -12,7 +12,7 @@ buildscript {
 allprojects {
   repositories {
     mavenCentral()
-    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    maven { url 'https://jitpack.io' }
   }
 }
 
@@ -36,10 +36,10 @@ android {
 
 repositories {
   mavenCentral()
-  maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+  maven { url 'https://jitpack.io' }
 }
 
 dependencies {
   implementation "com.facebook.react:react-native:+"
-  compile 'com.hoho.android:usb-serial-for-android:0.2.0-SNAPSHOT@aar'
+  implementation 'com.github.mik3y:usb-serial-for-android:3.3.0'
 }
