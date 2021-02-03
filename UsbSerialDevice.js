@@ -7,7 +7,13 @@ class UsbSerialDevice {
     }
 
     writeAsync(value = "") {
+        console.log('writeAsync')
         return this.UsbSerialModule.writeInDeviceAsync(this.id, value);
+    }
+
+    readAsync() {
+        console.log('readAsync')
+        return this.UsbSerialModule.readFromDeviceAsync(this.id);
     }
 }
 
